@@ -1,6 +1,10 @@
-# Task
+### Task
 # https://www.theodinproject.com/lessons/ruby-caesar-cipher
 # Implement a caesar cipher that takes in a string and the shift factor and then outputs the modified string:
+
+### Test 1
+# puts caesar_cipher('What a string!', 5)
+# => "Bmfy f xywnsl!"
 
 def caesar_cipher(text, shift)
   lower = ('a'..'z').to_a
@@ -18,8 +22,4 @@ def caesar_cipher(text, shift)
   return result
 end
 
-puts caesar_cipher("Louise!", 2)
-# => Nqwkug
-
 puts caesar_cipher('What a string!', 5)
-# => "Bmfy f xywnsl!"
