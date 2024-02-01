@@ -6,14 +6,11 @@ def caesar_cipher(text, shift)
   text.each_char.map do |char|
     if char.match(/[a-zA-Z]/)
       start_pos = char.downcase == char ? lower.find_index(char) : upper.find_index(char)
-
       result += char.downcase == char ? lower[(start_pos + shift) % 26] : upper[(start_pos + shift) % 26]
-
     else
       result += char
     end
   end
-
   return result
 end
 
